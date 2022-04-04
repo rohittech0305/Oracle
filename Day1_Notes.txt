@@ -1,0 +1,63 @@
+DBMS is  a software used to manage the database
+Ex:
+  MySQL , Oracle, PostgreSQL, DB2,
+
+create a table/database
+insert
+select
+update
+delete
+
+Apply protection
+
+Characteristics:
+It can provide the logical view on data
+automatic backup and recovery procedure
+it reduce the complex relationship between data
+Security on data
+
+Data Models:
+	1. Relational Data Model 
+		- design the data in the form of wors and colums (table)
+	2. Semistructured Data Model
+	3. Entity - Relationship Data mode
+	4. Object based data 
+
+==================================================
+CREATE TABKE statement is used to create a table
+
+Sytax:
+CREATE TABLE table_name (
+column1 datatype,
+column2 datatype,
+.
+.
+.
+columnN datatype);
+
+
+Data Types are :
+
+CHAR -> Fixed length of character - Ex: Char(1)
+*VARCHAR - Variable length of string (can contain numbers, strings and sepecial chars)
+*DATE - to store the date in date format : YYYY-MM-DD , 2022-04-05
+*DATETIME - To store the date and time : YYYY-MM-DD HH:MM:SS , 2022-04-04 12:11:30
+TIME - hh:mm:ss
+*INT - for interger type
+(BIGINT, SMALLINT,MEDIUMINT) 
+DOUBLE  
+*DECIMAL - DECIMAL(5,2)
+
+Contraint:
+Contraints is used to define the rules to allow or restrict what values can be stored in a columns.
+
+NOT NULL -> To specify we cannot store the NULL value in this columns
+UNIQUE  -> Does not allow us to insert a duplicate value
+PRIMARY KEY -> Enforces te table to accep unique data (unique index gets created for the primary key column)
+FOREIGN KEY ->creating a link b/w 2 table by specifying which column should connected in each table.
+CHECK -> Controls values for the associated column
+	 age INT CHECK age>0 & age<100
+	 country CHECK country in ('USA','UK','INDIA','CHINA','CANADA')
+DEFAULT -> goes with DEFAULT value if no value given for the colums
+	Ex:
+		country DEFAULT 'India'
